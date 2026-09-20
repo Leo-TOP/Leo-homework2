@@ -242,3 +242,63 @@ h2 {
   display: grid;
   gap: 8px;
 }
+
+@media (max-width: 720px) {
+  .layout {
+    width: calc(100% - 32px);
+  }
+
+  .page-grid,
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .panel {
+    padding: 24px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .details__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-card {
+    padding: 32px 24px;
+  }
+
+  .hero__lead,
+  .story__lead {
+    font-size: 17px;
+  }
+
+  .hero__summary {
+    padding-left: 0;
+    padding-top: 24px;
+    border-left: 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .details__heading {
+    display: block;
+  }
+
+  .details__heading .label {
+    margin-bottom: 12px;
+  }
+
+  .site-header__nav {
+    gap: 16px;
+  }
+}
